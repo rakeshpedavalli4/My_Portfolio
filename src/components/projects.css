@@ -1,0 +1,52 @@
+.Projects {
+  background-color: wheat;
+  font-size: x-large;
+  display: block;
+  align-content: center;
+  margin:0 auto;
+  text-align: center;
+  }
+
+  .Projects h2{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-weight: 200;
+  }
+  
+  .card {
+    background-color:whitesmoke;
+    border-radius: 1px;
+    padding: 1rem;
+    align-items: center;
+    display:block;
+    text-align: center;
+  }
+
+  
+  .card h3 {
+    font-size: 25px;
+    background-color: black;
+    color: white
+
+  }
+  
+  .card p {
+    font-size: 2rem;
+    line-height: 20px;
+
+  }
+  
+  .card a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .card a:hover{
+    opacity:.8;
+    background-color: black;
+    transition: all ease-in-out 0.3s;
+  }
+  
