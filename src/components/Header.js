@@ -35,7 +35,7 @@ const Header =()=>{
                 </div>
                 <div className='text'>
                     <h3>Hello, I'm Rakesh Chowdary Pedavalli</h3>
-                    <h4>Wed Developer</h4>
+                    <h4>Web Developer</h4>
                     <p>Actively looking for entry level positions</p>
                     <div>
                         <button className="button" onClick={Hireme}>Hire me</button>
