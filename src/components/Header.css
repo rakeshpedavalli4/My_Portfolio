@@ -1,42 +1,45 @@
+.header h3{
+    padding: 20px;
+    color:white;
+    font-size: 35px; 
+}
 .header{
-    background-color: black;
-    padding: 1rem;
-    color: rgb(217, 255, 127);
-    align-items: center;
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.pic{
+    max-width: 500px;
+    height:auto;
     
 }
-.header h1{
-    font-size: 4rem;
-    align-items: center;
-    padding: 10px;
-    border: 50px;
-    border-color: wheat;
-    width:auto;
-    margin: 0 auto;
+.header .text,p,h4{
+    color:white;
+    text-align:center;
+    padding:none;
+    line-height: 0;
+}
+h4{
+    font-size: 20px;
+    color: aquamarine;
+}
+.button{
+    background:rgb(131, 49, 49);
+    color:white;
+    width: 125px;
+    margin: 10px;
 }
 
-.header nav{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    list-style:none ;
-    background-color: aliceblue;
-    border: 50px;
-    border-radius: none; 
-}
+.icons button{
+    box-shadow: 2px 2px 0 rgb(133, 133, 183);
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 10px;
+    border-radius: 10px;
 
-.header a{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
 }
-
-.header .about,.contact,.projects1{
-    margin-right:.3em;
-    display: flexbox;
-    align-items: center;
-    margin: 0 auto;
-    height: fit-content;
+.icons button:active{
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 0 0 0 rgb(133, 133, 183);
 }

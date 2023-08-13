@@ -5,13 +5,16 @@ const Contacts=()=>{
         <section className="Contacts">
             <h2>My contact information</h2>
             <p>
+             Email: pedavary@mail.uc.edu  || Phone No: 5138796147 || Address: 4207 Crest ridge road, Irving, Tx
+            </p>
+            <p>
             Feel free to get in touch with me if you have any questions or if you'd like to discuss a project collaboration.
             </p>
             <form>
-                <input type="text" placeholder=" Your Name "></input>
-                <input type="email" placeholder=" Your email "></input>
-                <textarea placeholder=" Your Message"/>
-                <button type="submit">Send Message </button>
+                <input type="text" className="text-input" placeholder=" Your Name "></input>
+                <input type="email" className="text-input" placeholder=" Your email "></input>
+                <textarea className="text-input" placeholder=" Your Message"/>
+                <button type="submit" className="text-input">Send Message </button>
             </form>
         </section>
     );

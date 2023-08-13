@@ -1,0 +1,19 @@
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon{
+    text-align: center;
+    margin:15px;
+    flex: 0 0 calc(33.33% - 30px);
+}
+.image{
+    width:175px;
+    height:auto;
+
+}
+.progress{
+    width:175px;
+    height:4px;
+}

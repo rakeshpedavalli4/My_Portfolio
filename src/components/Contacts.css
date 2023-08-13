@@ -1,5 +1,4 @@
 .Contacts {
-    background-color: rgb(211, 211, 211);
     padding: 2rem;
     display: block;
     text-align: center;
@@ -9,16 +8,20 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     margin: center;
+    color: white;
   }
   
   .Contacts p {
     font-size: 1rem;
     line-height: 1.6;
+    color: white;
   }
   
   .Contacts form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 
   }
@@ -39,4 +42,11 @@
     height: 200px;
     resize: both;
   }
-  
+
+  .text-input{
+    color:white;
+    text-align: center;
+  }
+  .Contacts button {
+    background:#4987d6 ;
+  }
