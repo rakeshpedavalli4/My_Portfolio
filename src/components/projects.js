@@ -7,7 +7,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <card className='card'>
                 <div>
-                <a href="https://github.com/rakeshpedavalli4/Weatherapp" 
+                <a href="https://weather-a-4ba273782e0e.herokuapp.com/" 
                     target="_blank" 
                     rel="noreferrer" 
                     alt="Weather app">
@@ -27,7 +27,7 @@ const Projects = () => {
                 </a>
                 </div>
                 <div>
-                    <a href="https://github.com/rakeshpedavalli4/ExpenseTracker" 
+                    <a href="https://expensetracker-app-1b17deb859b3.herokuapp.com/" 
                     target="_blank" 
                     rel="noreferrer"
                     alt="expense tracker">
@@ -37,7 +37,7 @@ const Projects = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="https://github.com/rakeshpedavalli4/myCaluclator"
+                    <a href="https://calculator-app-493e9810a0ca.herokuapp.com/"
                     target ="_blank"
                     rel="noreferrer"
                     alt="Calculator"
