@@ -5,7 +5,7 @@ const Contacts=()=>{
         <section className="Contacts">
             <h2>My contact information</h2>
             <p>
-             Email: pedavary@mail.uc.edu  || Phone No: 5138796147 || Address: 4207 Crest ridge road, Irving, Tx
+             Email: pedavary@mail.uc.edu  || Phone No: 5138796147 || Address: 724 Riddle road, Cincinnati, OH
             </p>
             <p>
             Feel free to get in touch with me if you have any questions or if you'd like to discuss a project collaboration.
