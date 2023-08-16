@@ -7,7 +7,7 @@ const Projects = () => {
             <h2>Projects</h2>
             <card className='card'>
                 <div>
-                <a href="https://weather-a-4ba273782e0e.herokuapp.com/" 
+                <a href="https://master--benevolent-marshmallow-5aaba3.netlify.app/" 
                     target="_blank" 
                     rel="noreferrer" 
                     alt="Weather app">
@@ -27,7 +27,7 @@ const Projects = () => {
                 </a>
                 </div>
                 <div>
-                    <a href="https://expensetracker-app-1b17deb859b3.herokuapp.com/" 
+                    <a href="https://master--celebrated-eclair-e66612.netlify.app/" 
                     target="_blank" 
                     rel="noreferrer"
                     alt="expense tracker">

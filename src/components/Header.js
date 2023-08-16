@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import image from './Assets/IMG.png';
 import resume from './Assets/Rakesh_Pedavalli_Resume.docx';
