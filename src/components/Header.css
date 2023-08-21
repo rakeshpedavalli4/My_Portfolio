@@ -27,6 +27,13 @@ p{
         white-space: normal;
     }
 }
+@media(max-width:768px){
+    img{
+        max-width:80%;
+        width: auto;
+        height: auto;
+    }
+}
 .header .text,p,h4{
     color:white;
     text-align:center;
