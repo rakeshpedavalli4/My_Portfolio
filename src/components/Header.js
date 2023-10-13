@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import image from './Assets/IMG.png';
-import resume from "./Assets/Rakesh_pedavalli__resume.docx";
+import resume from "./Assets/Rakesh_resume.docx";
 
 const Header =()=>{
     const navigate = useNavigate();
