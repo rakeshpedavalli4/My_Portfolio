@@ -7,7 +7,7 @@ const About = () => {
             <h2>ABOUT ME</h2>
             <p>
                 Hello! I'm <span className="highlight">Rakesh Chowdary Pedavalli</span>,
-                 a passionate Full developer with a strong background in front-end, 
+                 a passionate Full Stack developer with a strong background in front-end, 
                  backend and database technologies. I love building user-friendly and
                   performant web applications using 
                   <span className="highlight"> Java, spring boot, JavaScript, react, node </span> 

@@ -4,7 +4,6 @@ import './projects.css';
 const Projects = () => {
     return (
          <section className='Projects'>
-            <h2>Projects</h2>
             <card className='card'>
                 <div>
                 <a href="https://master--benevolent-marshmallow-5aaba3.netlify.app/" 
