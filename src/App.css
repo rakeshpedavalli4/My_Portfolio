@@ -1,26 +1,80 @@
-*{
-  background-color: black;
-}
-.LinkContainer{
-    display: flex;
-    justify-content:center;
-    padding:10px;
-}
-a{
-  color:white;
-  text-decoration:underline;
-  margin: 10px;
-  display:flexbox;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.Nav{
+body {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.LinkContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.name h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.LinkContainer, .name{
-  color:white;
-  font-size: 30px;
-  font-style:oblique;
+.Nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Nav a:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .name h1 {
+    font-size: 1.5rem;
+  }
+
+  .Nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .Nav a {
+    width: 100%;
+    text-align: center;
+  }
 }

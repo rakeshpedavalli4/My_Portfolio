@@ -1,15 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 .About {
-    padding: 2rem;
-  }
-  
-  .About h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 3rem;
+    text-align: center;
+    background: black; /* Black background */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.About:hover {
+    transform: translateY(-5px); /* Lift the section on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.About h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.About h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background: aquamarine;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.About p {
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: #f7f7f7;
-  }
-  
-  .About p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #f7f7f7;
-  }
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.highlight {
+    color: aquamarine;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .About {
+        padding: 2rem;
+    }
+
+    .About h2 {
+        font-size: 2rem;
+    }
+
+    .About p {
+        font-size: 1rem;
+    }
+}

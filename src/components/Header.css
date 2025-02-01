@@ -1,65 +1,181 @@
-.header h3{
-    padding: 20px;
-    color:white;
-    font-size: 35px; 
-    white-space: nowrap;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.header-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 2rem 1rem; /* Reduced padding for mobile */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    max-width: 1200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.header{
+
+.header-container:hover {
+    transform: translateY(-5px); /* Lift the section on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.header {
     display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
     align-items: center;
-    justify-content:space-evenly;
-
-}
-.pic{
-    max-width: 500px;
-    height:auto;
-
-}
-p{
-    white-space: nowrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media(max-width:50%){
-    p{
-        white-space: normal;
-    }
-    h3{
-        white-space: normal;
-    }
+.profile-pic img {
+    max-width: 200px; /* Smaller image for mobile */
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem; /* Space between image and text */
 }
-@media(max-width:768px){
-    img{
-        max-width:80%;
-        width: auto;
-        height: auto;
-    }
+
+.header-text {
+    text-align: center;
 }
-.header .text,p,h4{
-    color:white;
-    text-align:center;
-    padding:none;
-    line-height: 0;
+
+.header-text h3 {
+    font-size: 2rem; /* Smaller font size for mobile */
+    margin-bottom: 0.5rem;
+    color: #fff;
 }
-h4{
-    font-size: 20px;
+
+.header-text h4 {
+    font-size: 1.2rem; /* Smaller font size for mobile */
     color: aquamarine;
-}
-.button{
-    background:rgb(131, 49, 49);
-    color:white;
-    width: 125px;
-    margin: 10px;
+    margin-bottom: 1rem;
 }
 
-.icons button{
-    box-shadow: 2px 2px 0 rgb(133, 133, 183);
-    background-color: white;
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin: 10px;
-    border-radius: 10px;
-
+.header-text p {
+    font-size: 1rem; /* Smaller font size for mobile */
+    margin-bottom: 1.5rem;
 }
-.icons button:active{
-    transform: translateX(2px) translateY(2px);
-    box-shadow: 0 0 0 rgb(133, 133, 183);
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Full-width buttons on mobile */
+}
+
+.button.hire-me {
+    background: #4CAF50;
+    color: white;
+}
+
+.button.resume {
+    background: #f44336;
+    color: white;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 0.5rem; /* Smaller gap for mobile */
+    max-width: 75%; /* Ensure icons stay within the container */
+    margin-left: auto; /* Push the container to the right */
+    padding-right: 1rem; /* Add right padding for spacing */
+}
+
+.icon {
+    padding: 0.5rem 1rem; /* Smaller padding for mobile */
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    flex: 1 1 auto; /* Allow buttons to shrink */
+    text-align: center;
+    width: 120px; /* Fixed width for smaller buttons */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.icon.linkedin {
+    background: #0077b5;
+}
+
+.icon.instagram {
+    background: #e4405f;
+}
+
+.icon.facebook {
+    background: #3b5998;
+}
+
+.icon.github {
+    background: #333;
+}
+
+.icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row; /* Side-by-side layout on larger screens */
+        text-align: left;
+    }
+
+    .profile-pic img {
+        max-width: 300px; /* Larger image for desktop */
+        margin-bottom: 0; /* Remove margin for desktop */
+    }
+
+    .header-text h3 {
+        font-size: 2.5rem; /* Larger font size for desktop */
+    }
+
+    .header-text h4 {
+        font-size: 1.5rem; /* Larger font size for desktop */
+    }
+
+    .header-text p {
+        font-size: 1.2rem; /* Larger font size for desktop */
+    }
+
+    .button-container {
+        flex-direction: row; /* Buttons side-by-side on desktop */
+    }
+
+    .button {
+        width: auto; /* Auto width for desktop */
+    }
+
+    .social-icons {
+        flex-wrap: nowrap; /* Icons in a single row on desktop */
+        gap: 1rem; /* Larger gap for desktop */
+        justify-content: flex-end; /* Align icons to the right on desktop */
+        padding-right: 1rem; /* Add right padding to move icons further right */
+    }
+
+    .icon {
+        flex: none; /* Reset flex for desktop */
+        padding: 0.5rem 1rem; /* Smaller padding for desktop */
+        font-size: 0.9rem; /* Smaller font size for desktop */
+        width: 120px; /* Fixed width for smaller buttons */
+    }
 }
